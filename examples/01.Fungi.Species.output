@@ -1,0 +1,85 @@
+## Training set size: 55
+Training	Seed	Afu	Aspergillus fumigatus	Pezizomycotina	BroadInstitute
+Training	Seed	Mor	Magnaporthe oryzae	Pezizomycotina	JGI
+Training	Seed	Cdu	Candida dubliniensis	Saccharomycotina	KEGG
+Training	Seed	Cgl	Candida glabrata	Saccharomycotina	Genolevures
+Training	Seed	Sja	Schizosaccharomyces japonicus	Schizosaccharomycetes	BroadInstitute
+Training		Abr	Alternaria brassicicola	Pezizomycotina	JGI
+Training		Aco	Aspergillus carbonarius	Pezizomycotina	JGI
+Training		Ani	Aspergillus nidulans	Pezizomycotina	JGI
+Training		Aor	Aspergillus oryzae	Pezizomycotina	JGI
+Training		Ate	Aspergillus terreus	Pezizomycotina	JGI
+Training		Bci	Botryotinia fuckeliana	Pezizomycotina	JGI
+Training		Bdr	Ajellomyces dermatitidis	Pezizomycotina	BroadInstitute
+Training		Chg	Colletotrichum higginsianum	Pezizomycotina	BroadInstitute
+Training		Cpd	Coccidioides posadasii	Pezizomycotina	BroadInstitute
+Training		Fox	Fusarium oxysporum	Pezizomycotina	BroadInstitute
+Training		Ggr	Glomerella graminicola	Pezizomycotina	BroadInstitute
+Training		Gze	Gibberella zeae	Pezizomycotina	JGI
+Training		Mfi	Mycosphaerella fijiensis	Pezizomycotina	JGI
+Training		Mgm	Mycosphaerella graminicola	Pezizomycotina	JGI
+Training		Mgy	Microsporum gypseum	Pezizomycotina	BroadInstitute
+Training		Mii	Mycosphaerella pini	Pezizomycotina	JGI
+Training		Mpo	Mycosphaerella populorum	Pezizomycotina	JGI
+Training		Ncr	Neurospora crassa	Pezizomycotina	JGI
+Training		Ndi	Neurospora discreta	Pezizomycotina	JGI
+Training		Nha	Nectria haematococca	Pezizomycotina	JGI
+Training		Nte	Neurospora tetrasperma	Pezizomycotina	JGI
+Training		Pan	Podospora anserina	Pezizomycotina	JGI
+Training		Pcm	Penicillium chrysogenum	Pezizomycotina	JGI
+Training		Pno	Phaeosphaeria nodorum	Pezizomycotina	JGI
+Training		Tat	Trichoderma atroviride	Pezizomycotina	JGI
+Training		Tme	Tuber melanosporum	Pezizomycotina	KEGG
+Training		Trb	Trichophyton rubrum	Pezizomycotina	BroadInstitute
+Training		Tre	Hypocrea jecorina	Pezizomycotina	JGI
+Training		Tts	Thielavia terrestris	Pezizomycotina	JGI
+Training		Tve	Trichophyton verrucosum	Pezizomycotina	BroadInstitute
+Training		Tvi	Hypocrea virens	Pezizomycotina	JGI
+Training		Ure	Uncinocarpus reesii	Pezizomycotina	BroadInstitute
+Training		Vda	Verticillium dahliae	Pezizomycotina	BroadInstitute
+Training		Ago	Ashbya gossypii	Saccharomycotina	YGOB
+Training		Clu	Clavispora lusitaniae	Saccharomycotina	BroadInstitute
+Training		Ctr	Candida tropicalis	Saccharomycotina	BroadInstitute
+Training		Dha	Debaryomyces hansenii	Saccharomycotina	Genolevures
+Training		Kla	Kluyveromyces lactis	Saccharomycotina	Genolevures
+Training		Kwa	Lachancea waltii	Saccharomycotina	Duke
+Training		Lth	Lachancea thermotolerans	Saccharomycotina	JGI
+Training		Mgd	Meyerozyma guilliermondii	Saccharomycotina	JGI
+Training		Pst	Scheffersomyces stipitis	Saccharomycotina	JGI
+Training		Sca	Naumovia castellii	Saccharomycotina	YGOB
+Training		Sce	Saccharomyces cerevisiae	Saccharomycotina	SGD
+Training		Skl	Lachancea kluyveri	Saccharomycotina	Genolevures
+Training		Smi	Saccharomyces mikatae	Saccharomycotina	TheHyphalTip
+Training		Spa	Saccharomyces paradoxus	Saccharomycotina	TheHyphalTip
+Training		Zro	Zygosaccharomyces rouxii	Saccharomycotina	JGI
+Training		Soc	Schizosaccharomyces octosporus	Schizosaccharomycetes	BroadInstitute
+Training		Spb	Schizosaccharomyces pombe	Schizosaccharomycetes	BroadInstitute
+## Testing set size: 28
+Testing 		Abe	Arthroderma benhamiae	Pezizomycotina	BroadInstitute
+Testing 		Acl	Aspergillus clavatus	Pezizomycotina	JGI
+Testing 		Acs	Ajellomyces capsulatus	Pezizomycotina	JGI
+Testing 		Afl	Aspergillus flavus	Pezizomycotina	JGI
+Testing 		Ang	Aspergillus niger	Pezizomycotina	JGI
+Testing 		Aot	Arthroderma otae	Pezizomycotina	BroadInstitute
+Testing 		Cgo	Chaetomium globosum	Pezizomycotina	JGI
+Testing 		Che	Cochliobolus heterostrophus	Pezizomycotina	JGI
+Testing 		Cim	Coccidioides immitis	Pezizomycotina	BroadInstitute
+Testing 		Cpr	Cryphonectria parasitica	Pezizomycotina	JGI
+Testing 		Fve	Gibberella moniliformis	Pezizomycotina	BroadInstitute
+Testing 		Mta	Myceliophthora thermophila	Pezizomycotina	JGI
+Testing 		Nfi	Neosartorya fischeri	Pezizomycotina	JGI
+Testing 		Pbr	Paracoccidioides brasiliensis	Pezizomycotina	BroadInstitute
+Testing 		Pti	Pyrenophora tritici-repentis	Pezizomycotina	BroadInstitute
+Testing 		Ssc	Sclerotinia sclerotiorum	Pezizomycotina	JGI
+Testing 		Teq	Trichophyton equinum	Pezizomycotina	BroadInstitute
+Testing 		Tto	Trichophyton tonsurans	Pezizomycotina	BroadInstitute
+Testing 		Val	Verticillium albo-atrum	Pezizomycotina	BroadInstitute
+Testing 		Cal	Candida albicans	Saccharomycotina	BroadInstitute
+Testing 		Cpp	Candida parapsilosis	Saccharomycotina	BroadInstitute
+Testing 		Kpo	Vanderwaltozyma polyspora	Saccharomycotina	YGOB
+Testing 		Lel	Lodderomyces elongisporus	Saccharomycotina	JGI
+Testing 		Ppa	Pichia pastoris	Saccharomycotina	JGI
+Testing 		Sba	Saccharomyces bayanus	Saccharomycotina	YGOB
+Testing 		Sku	Saccharomyces kudriavzevii	Saccharomycotina	TheHyphalTip
+Testing 		Yli	Yarrowia lipolytica	Saccharomycotina	Genolevures
+Testing 		Scr	Schizosaccharomyces cryophilus	Schizosaccharomycetes	BroadInstitute

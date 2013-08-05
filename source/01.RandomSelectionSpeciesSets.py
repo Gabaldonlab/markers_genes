@@ -4,7 +4,7 @@
 ## Example how to call this script using available examples:
 ##
 ## python 01.RandomSelectionSpeciesSets.py --species ../examples/01.Fungi.Species.list \
-## --relative_size 0.66 --seed Cdu Sja Cgl Mor Afu --column_gr 2 --out 01.Output
+## --relative_size 0.66 --seed Cdu Sja Cgl Mor Afu --column_gr 2 --out ../examples/01.Fungi.Species.output
 ##
 import sys, os, argparse, numpy as np
 from random import randint
