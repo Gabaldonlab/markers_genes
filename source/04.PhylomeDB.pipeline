@@ -1,0 +1,13 @@
+## Of note: Some steps used on this pipeline depend on an external pipeline called 'phylomizer'.
+## This pipeline have been developed for phylomeDB but we expect to release it as an independent project.
+## This pipeline has been used on:
+##    1) Homology Search: Blast search and posterior filtering, based on coverage, number of sequences and e-value.
+##    2) Multiple Sequence Alignment reconstruction: As described in phylomedb.org paper, several multiple sequence alignment are generated in order to A) generate a consensus alignment and B) to trim this consensus alignment based on the information coming from all available alignments.
+##    3) Evolutionary Model Selection: A fast model selection based on NJ trees is performed to determine which is the best fitting model/s for the Maximum Likelihood tree reconstruction.
+##    4) Maximum Likelihood tree reconstruction: A wrapper to call PhyML using the best fitting model/s is used to reconstruct accurate Maximum Likelihood trees.
+
+## As soon as the phylomeDB pipeline 'phylomizer' is release for general usage, we will include it to fully automatize the process of identifying marker genes.
+
+## Of note: Input/output files are prepared to work independtly of the 'phylomizer' pipeline.
+## The user can used any strategy to construct the set of orthologs sequences as well as reconstruct Multiple Sequence Alignments & Phylogenetic trees for these sets of orthologous sequences. 
+##
