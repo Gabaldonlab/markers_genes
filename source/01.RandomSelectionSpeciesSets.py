@@ -64,6 +64,8 @@ def main(argv):
   ## Read input file containing the list of species and make some QCs.
   species, training, n = {}, set(), 0
   for line in open(args.inFile, "rU"):
+    if line.startswith("#"):
+      continue
     f = map(strip, line.split(args.delim))
     species.setdefault(f[args.grColumn], {}).setdefault(f[args.spColumn], f)
     if f[args.spColumn] in args.seedSps:
