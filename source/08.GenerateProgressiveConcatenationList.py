@@ -60,10 +60,10 @@ def main(argv):
     print "\n".join(map(str, sorted(data)))
 
   current = [sorted(data)[0][-1]]
-  for entry in sorted(data)[1:]:
+  for entry in sorted(data)[1:-1]:
     current.append(entry[-1])
     print >> oFile, ("%s\t%d\t%s") % (str(len(current)).zfill(4), len(current),
-      ",".join(sorted(current)))
+      ",".join(current))
   oFile.close()
 ### ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ****
 if __name__ == "__main__":
