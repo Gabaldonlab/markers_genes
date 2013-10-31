@@ -51,7 +51,7 @@ def main(argv):
   data = []
   for line in open(args.inFile, "rU"):
     f = map(strip, line.split(args.delim))
-    data.append([int(f[args.columns[p]]) * (1 if args.sortColumns[p] == "asc" \
+    data.append([float(f[args.columns[p]]) * (1 if args.sortColumns[p] == "asc"\
       else -1) for p in range(len(args.columns))] + [f[args.idColumn]])
 
   oFile = open(args.outFile, "w") if args.outFile else sys.stdout

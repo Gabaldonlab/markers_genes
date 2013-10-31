@@ -65,20 +65,20 @@ def main(argv):
         if sp in common:
           subset.append(seq)
       key = md5(",".join(sorted(subset))).hexdigest()
-      entry = [("[%s]") % (dataset)] + line
+      entry = [("%s%s%s") % (dataset, args.delim, key)] + line
       data.setdefault(key, set()).add(args.delim.join(entry))
 
-  print ("## Common Species:     %d") % (len(common))
-  print ("## Non-Common Species: %d") % (len(uncommon))
-  print ("## Total Species:      %d\n") % (len(common) + len(uncommon))
-  print ("## All Markers:        %d") % (len(data))
+  print ("## Common Species:     \t%d") % (len(common))
+  print ("## Non-Common Species: \t%d") % (len(uncommon))
+  print ("## Total Species:      \t%d\n") % (len(common) + len(uncommon))
+  print ("## All Markers:        \t%d") % (len(data))
   common = len([d for d in data if len(data[d]) == numberDatasets])
-  print ("## Common Markers:     %d") % (common)
+  print ("## Common Markers:     \t%d") % (common)
+  print ("## Strategy:           \t%s") % (args.strategy)
 
   oFile = open(args.outFile, "w") if args.outFile else sys.stdout
   ## Print, depending on input parameters, the overlapping and non-overlapping
   ## datasets
-  print args.strategy
   if args.strategy in ["common", "all"]:
     for ref in [d for d in data if len(data[d]) == numberDatasets]:
       for line in sorted(data[ref]):
@@ -87,7 +87,7 @@ def main(argv):
   if args.strategy in ["uncommon", "all"]:
     for ref in [d for d in data if data[d] != numberDatasets]:
       for line in sorted(data[ref]):
-        print >> oFile, ("[%s]%s%s") % (ref, args.delim, line)
+        print >> oFile, line
   oFile.close()
 ### ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ****
 if __name__ == "__main__":
