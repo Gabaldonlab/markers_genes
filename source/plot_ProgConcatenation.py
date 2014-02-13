@@ -33,6 +33,9 @@ def main(argv):
   parser.add_argument("--column_sc", dest = "scoreColumn", default = 3, type = \
     int, help = "Column containing Robinson&Foulds Distance. Starts at 0.")
 
+  parser.add_argument("--max_score", dest = "maxScore", default = -1, type = \
+    float, help = "Column containing the maximum score displayed")
+
   parser.add_argument("--column_splits", dest = "spColumn", default = 1, type =\
     int, help = "Column containing number of tree sequences. Starts at 0.")
 
@@ -48,7 +51,8 @@ def main(argv):
     if not os.path.isfile(inFile):
       print >> sys.stderr, ("ERROR: Check input file '%s'") % (inFile)
       continue
-    key = os.path.split(inFile)[1].split(".")[1]
+    #~ key = os.path.split(inFile)[1].split(".")[1]
+    key = ".".join(os.path.split(inFile)[1].split(".")[-2:])
 
     for line in open(inFile, "rU"):
       f = map(strip, line.split(args.delim))
@@ -92,12 +96,16 @@ def main(argv):
   ## Configure y-axis
   if args.wrongSplits:
     ymin, ymax = ax.set_ylim()
+    if args.maxScore != -1 and ymax > args.maxScore:
+      ymax = args.maxScore + .01
     ax.set_ylim(-.2, ymax * 1.05)
     ax.set_yticklabels([("%g%%") % (ypos) for ypos in ax.get_yticks()])
     ax.set_ylabel('% Wrong splits compared to the reference tree', size = 'large',
       weight = 'bold')
   else:
     ymin, ymax = ax.set_ylim()
+    if args.maxScore != -1 and ymax > args.maxScore:
+      ymax = args.maxScore * 1.01
     ax.set_ylim(-.2, ymax * 1.05)
     ax.set_ylabel('R&F Distance to the reference tree', size = 'large',
       weight = 'bold')
